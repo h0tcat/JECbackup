@@ -1,3 +1,5 @@
+import java.math.*;
+
 public class Enshu0104{
 
 	public static void main(String[] args){
@@ -18,6 +20,6 @@ public class Enshu0104{
 				System.out.println("0以上の値を入力してください");
 			}
 		}
-		System.out.printf("面積 : %.2f\n",pi*r*r);
+		System.out.printf("面積 : %.2f\n",pi*Math.pow(r,2));
 	}
 }
