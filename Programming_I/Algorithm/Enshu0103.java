@@ -4,11 +4,16 @@ public class Enshu0103{
 				algo=-1,
 				sql=-1;
 		double average=-1;
-		boolean isNotNegativeScores=false;
+		boolean isNegativeScores=false;
 
 		java.util.Scanner stdScanner = new java.util.Scanner(System.in);
 		
-		while(!(isNotNegativeScores)){
+		isNegativeScores=
+			pro<0  ||
+			algo<0 ||
+			sql<0;
+
+		while(isNegativeScores){
 			System.out.print("プログラミング :");
 			pro=stdScanner.nextInt();
 
@@ -20,14 +25,13 @@ public class Enshu0103{
 
 			average=(pro+algo+sql)/3;
 			
-			isNotNegativeScores=
-				0<=pro &&
-				0<=algo &&
-				0<=sql;
+			isNegativeScores=
+				pro<0  ||
+				algo<0 ||
+				sql<0;
 
-			if(!(isNotNegativeScores)){
+			if(isNegativeScores){
 				System.out.println("0以上の値を入力してください");
-				isNotNegativeScores=false;
 			}
 		}
 		System.out.printf("平均点 : %.1f\n",average);

@@ -2,7 +2,6 @@ public class Enshu0105{
 	
 	public static void main(String[] args){
 	
-		boolean isNotNegativeSec=false;
 		int sec=-1,
 				hour=-1,
 				min=-1,
@@ -11,12 +10,11 @@ public class Enshu0105{
 
 		java.util.Scanner stdScanner=new java.util.Scanner(System.in);
 		
-		while(!(isNotNegativeSec)){
+		while(sec<0){
 			System.out.print("秒: ");
 			sec=stdScanner.nextInt();
 			
-			isNotNegativeSec=sec>=0;
-			if(!(isNotNegativeSec))
+			if(sec<0)
 				System.out.println("0以上の値で入力してください");
 		}
 			//時間計算をする。(秒から時間・分・秒へ)

@@ -15,15 +15,20 @@ public class Enshu0106{
 				diffHour=-1,
 				diffMin=-1;
 
-		boolean isNotNegativeNumbers=false;
+		boolean isNegativeNumbers=false;
 
-		boolean successedCalc=false;
+		boolean failedCalc=false;
 		java.util.Scanner stdScanner=new java.util.Scanner(System.in);
 
 		//入力されたすべての値が正の数であれば、次へ進む。
 
-		while(!(successedCalc)){
-			while(!(isNotNegativeNumbers)){
+		isNegativeNumbers=
+			startHour<0 ||
+			startMin <0 ||
+			endHour  <0 ||
+			endMin   <0 ;
+		while(!(failedCalc)){
+			while(isNegativeNumbers){
 				System.out.print("開始 - 時: ");
 				startHour=stdScanner.nextInt();
 
@@ -36,13 +41,13 @@ public class Enshu0106{
 				System.out.print("終了 - 分: ");
 				endMin =stdScanner.nextInt();
 
-				isNotNegativeNumbers=
-					startHour>=0 &&
-					startMin >=0 &&
-					endHour  >=0 &&
-					endMin   >=0;
+				isNegativeNumbers=
+					startHour<0 ||
+					startMin <0 ||
+					endHour  <0 ||
+					endMin   <0 ;
 
-				if(!(isNotNegativeNumbers))
+				if(isNegativeNumbers)
 					System.out.println("0以上の値で入力してください");
 
 				diffHour= endHour-startHour;
@@ -54,10 +59,11 @@ public class Enshu0106{
 					diffMin+=60;
 				}
 			}
-			successedCalc=0<=diffHour && 0<=diffMin;
-			if(!(successedCalc)){
+
+			failedCalc=0<diffHour && 0<diffMin;
+			if(failedCalc==false){
 				System.out.println("計算エラー。");
-				isNotNegativeNumbers=false;
+				isNegativeNumbers=true;
 			}
 		}
 		System.out.println();

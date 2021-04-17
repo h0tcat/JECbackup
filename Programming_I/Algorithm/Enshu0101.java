@@ -3,10 +3,10 @@ public class Enshu0101{
 		double nuki=-1,komi;
 		java.util.Scanner stdScanner=new java.util.Scanner(System.in);
 		
-		while(!(0<=nuki)){
+		while(nuki<0){
 			System.out.print("税抜き価格 : ");
 			nuki=stdScanner.nextDouble();
-			if(!(0<=nuki))
+			if(nuki<0)
 				System.out.println("0以上の値を入力してください");
 		}
 		komi=nuki*1.10;

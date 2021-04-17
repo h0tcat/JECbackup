@@ -6,19 +6,14 @@ public class Enshu0104{
 		final double pi=3.14;
 		double r=-1;
 
-		boolean isNotNegativeR=false;
-
 		java.util.Scanner stdScanner=new java.util.Scanner(System.in);
 		
-		while(!(isNotNegativeR)){
+		while(r<0){
 			System.out.print("半径 :");
 			
 			r=stdScanner.nextDouble();
-			isNotNegativeR=0<=r;
-
-			if(!(isNotNegativeR)){
+			if(r<0)
 				System.out.println("0以上の値を入力してください");
-			}
 		}
 		System.out.printf("面積 : %.2f\n",pi*Math.pow(r,2));
 	}
