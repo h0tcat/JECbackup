@@ -15,5 +15,7 @@ public class Swap{
     b=c;
 
     System.out.printf("%d, %d",a,b);
+
+    sc.close();
    } 
 }
