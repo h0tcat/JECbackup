@@ -12,10 +12,13 @@ public class Sample01d {
 
         //printfを使うことで ダブルクォーテーションの閉じ忘れになりにくく、簡潔なコードになる。
         System.out.printf("入力した値は%dです。\n",x);
-
+        
+        //Input double Value Using Scanner.
         System.out.print("小数値を入力してください--> ");
         y=sc.nextDouble();
         System.out.printf("入力した値は%.2fです。\n",y);
+
+        //close Scanner And exit program.
         sc.close();
     }   
 }
