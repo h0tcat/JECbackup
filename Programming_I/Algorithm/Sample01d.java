@@ -16,8 +16,6 @@ public class Sample01d {
         System.out.print("小数値を入力してください--> ");
         y=sc.nextDouble();
         System.out.printf("入力した値は%.2fです。\n",y);
-
-
-		sc.close();
+        sc.close();
     }   
 }
