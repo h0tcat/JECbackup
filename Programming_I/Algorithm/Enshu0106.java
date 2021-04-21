@@ -69,5 +69,6 @@ public class Enshu0106{
 		System.out.println();
 		System.out.printf("経過 - 時: %01d\n",diffHour);
 		System.out.printf("経過 - 分: %01d\n",diffMin);
+		stdScanner.close();
 	}
 }
