@@ -5,7 +5,7 @@ public class Enshu0101{
 		
 		while(nuki<0){
 			System.out.print("税抜き価格 : ");
-			nuki=stdScanner.nextDouble();
+			nuki=stdScanner.nextInt();
 			if(nuki<0)
 				System.out.println("0以上の値を入力してください");
 		}
