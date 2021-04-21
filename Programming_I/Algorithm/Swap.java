@@ -8,7 +8,7 @@ public class Swap{
     a=sc.nextInt();
     b=sc.nextInt();
 
-    System.out.printf("%d, %d",a,b);
+    System.out.printf("%d, %d\n",a,b);
 
     c=a;
     a=b;
