@@ -12,5 +12,6 @@ public class Enshu0101{
 		komi=nuki*1.10;
 		
 		System.out.printf("税込み価格 : %.0f\n",komi);
+		stdScanner.close();
 	}
 }

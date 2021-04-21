@@ -34,6 +34,8 @@ public class Enshu0103{
 				System.out.println("0以上の値を入力してください");
 			}
 		}
+
 		System.out.printf("平均点 : %.1f\n",average);
+		stdScanner.close();
 	}
 }

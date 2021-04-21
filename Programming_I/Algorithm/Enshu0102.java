@@ -25,5 +25,7 @@ public class Enshu0102{
 
 		System.out.printf("消費税額 : %.0f\n",shouhizeikakaku);
 		System.out.printf("税込み価格 : %.0f\n",zeikomikakaku);
+
+		stdScanner.close();
 	}
 }

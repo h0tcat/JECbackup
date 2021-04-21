@@ -35,5 +35,6 @@ public class Enshu0107{
 
 		System.out.printf("x :%d\n",x+dx);
 		System.out.printf("y :%d\n",y+dy);
+		stdScanner.close();
 	}
 }

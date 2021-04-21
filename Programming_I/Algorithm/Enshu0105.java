@@ -29,5 +29,7 @@ public class Enshu0105{
 		System.out.printf("時間: %01d\n",hour);
 		System.out.printf("分  : %01d\n",min);
 		System.out.printf("秒  : %01d\n",convertedSec);
+
+		stdScanner.close();
 	}
 }
