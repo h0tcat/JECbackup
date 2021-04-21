@@ -23,7 +23,7 @@ public class Enshu0103{
 			System.out.print("SQL :");
 			sql=stdScanner.nextInt();
 
-			average=(pro+algo+sql)/3;
+			average=(double)(pro+algo+sql)/3;
 			
 			isNegativeScores=
 				pro<0  ||
